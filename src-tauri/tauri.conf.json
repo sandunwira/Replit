@@ -1,0 +1,82 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Replit",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": false,
+        "print": false,
+        "setFullscreen": true,
+        "setResizable": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "publisher": "KoolApps Team",
+      "category": "DeveloperTool",
+      "copyright": "KoolApps Team",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.koolapps.replit",
+      "longDescription": "Desktop app for Replit",
+      "shortDescription": "Desktop app for Replit",
+      "externalBin": [],
+      "resources": [],
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": "",
+        "wix": {
+          "language": "en-US"
+        }
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "endpoints": [
+        "https://replit.koolapps.repl.co/updater.json"
+      ],
+      "windows": {
+        "installMode": "basicUi"
+      },
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk4RDI1OThEREJEQTBDOTEKUldTUkROcmJqVm5TbUVPYWtSSm1rTkNCeWJvTi94dWpibFNBeW45QkliVGp1ZWNVQ0lSV0JpZm4K"
+    },
+    "windows": [
+      {
+        "title": "Replit",
+        "width": 1500,
+        "height": 750,
+        "url": "https://replit.com/~",
+        "fullscreen": false,
+        "focus": true,
+        "resizable": true,
+        "decorations": true,
+        "center": true
+      }
+    ]
+  }
+}
